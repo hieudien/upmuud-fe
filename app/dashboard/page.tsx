@@ -261,7 +261,7 @@ const Dashboard: FC = () => {
 
 	// Close sidebar and switch tab
 	const handleNavigation = (tab: 'share' | 'wellness') => {
-		if (tab === 'wellness') {
+		if (tab !== activeTab && tab === 'wellness') {
 			setAiResponse(null)
 			getJournals()
 		}
