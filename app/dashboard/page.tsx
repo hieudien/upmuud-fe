@@ -102,8 +102,6 @@ const ShareEmotionTab: FC<ShareEmotionTabProps> = ({ aiResponse, setAiResponse }
   return (
     <div className="max-w-3xl mx-auto">
       <h2 className="text-3xl font-bold text-gray-900 mb-6">Chia Sẻ Cảm Xúc Hôm Nay</h2>
-      <p className="text-text-soft mb-6">Viết ra những suy nghĩ của bạn (sẽ được AI phân tích và phản hồi). Chỉ có bạn và AI biết điều này.</p>
-
       {/* Input Form */}
       <form onSubmit={handleSubmit} className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
         <textarea
